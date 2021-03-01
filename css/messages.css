@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#all-messages {
+  scroll-behavior: smooth;
+}
+.got{
+  display: flex;
+
+}
+.all-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts {
+  width: 30vw;
+  height: 100vh;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+.messages {
+  height: 100vh;
+  /* border: 2px solid red; */
+  width: 70vw;
+}
+
+.settings {
+  /* border: 2px solid red; */
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+.all-contacts {
+  height: 88vh;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: flex-end;
+}
+.settings-wrapper {
+  /* border: 2px solid red; */
+  height: 75%;
+  display: flex;
+  width: 95%;
+}
+#search-contacts {
+  width: 90%;
+  margin: auto;
+  display: block;
+  height: 45px;
+  border-radius: 20px;
+  background: #f0f0f0;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+  padding-left: 10px;
+  letter-spacing: 0.36px;
+}
+.contacts-wrapper {
+  /* border: 2px solid red; */
+  width: 95%;
+  display: flex;
+  height: 100%;
+  overflow-y: scroll;
+  /* padding-top: 15px; */
+  flex-direction: column;
+}
+#act-now{
+  background: #272e35;
+
+}
+.contact-info {
+  border: 1px solid #00000014;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.contact-info:hover {
+  background: #f3f5ff;
+}
+.contact-info:hover {
+  background: #f3f5ff;
+}
+.contact-img {
+  max-width: 58px;
+  max-height: 58px;
+  border-radius: 100%;
+}
+.con-name-msg {
+  width: 81%;
+  margin-left: 10px;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.con-name-msg > h3 {
+  font-weight: 500;
+  opacity: 0.89;
+}
+.con-name-msg > p {
+  font-size: 13px;
+  opacity: 0.99;
+}
+
+/* scc for messages section  */
+.menu {
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message-section {
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacter-info {
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #00000045;
+}
+
+.contact-img-msg {
+  max-width: 45px;
+  max-height: 45px;
+  border-radius: 100%;
+}
+
+.con-name-msg-section {
+  margin-left: 20px;
+}
+.con-name-msg-section > h4 {
+  font-weight: 500;
+}
+
+.message-header-section {
+  width: 100%;
+  height: 12%;
+}
+.all-chats-section {
+  height: 79%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  overflow-y: scroll;
+  transition: all 0.3s;
+}
+.send-message-section {
+  width: 100%;
+  height: 9%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.got {
+  width: 100%;
+}
+.got > .msg-text > p {
+  max-width: 573px;
+  /* border: 2px solid black; */
+  line-height: 1.54;
+  font-size: 0.9375rem;
+  letter-spacing: 0.24px;
+  padding: 15px;
+  /* border-radius: 47px 30px 2222px 3px; */
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: #e4e6eb;
+  color: #050505;
+  font-weight: 100;
+  position: relative;
+  left: 25px;
+}
+.sent {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-end;
+}
+.sent > .msg-text > p {
+  max-width: 573px;
+  /* border: 2px solid black; */
+  line-height: 1.54;
+  font-size: 0.9375rem;
+  letter-spacing: 0.24px;
+  padding: 15px;
+  /* border-radius: 47px 30px 2222px 3px; */
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: #0084ff;
+  color: white;
+  font-weight: 100;
+  position: relative;
+  right: 15px;
+}
+
+.condition {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 100px;
+  width: 15px;
+  height: 15px;
+  max-width: 15px;
+  max-height: 15px;
+  border: 1px solid black;
+  border-radius: 100px;
+  margin-top: auto;
+  position: relative;
+  right: 5px;
+}
+.condition > .msg-sent {
+  font-size: 10px;
+  position: relative;
+  bottom: 6.3px;
+  left: 1.39px;
+  color: black;
+}
+.msg-seen {
+  max-width: 15px;
+  max-height: 15px;
+  border-radius: 100px;
+  border: none;
+}
+
+.my-4 {
+  margin: 20px 0px;
+}
+
+.the-message {
+  width: 95.4%;
+  color: #333;
+  padding-left: 20px;
+  font-size: 14.5px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-top: 1px solid #00000061;
+  border-right: 1px solid #00000061;
+}
+
+.send-button {
+  width: 4.6%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.send-button > i {
+  color: #0084ff;
+  font-size: 22px;
+}
+
+/* media query  */
+@media only screen and (max-width: 1000px) {
+  .got > .msg-text > p {
+    max-width: 495px;
+  }
+  .sent > .msg-text > p {
+    max-width: 495px;
+  }
+  .send-button {
+    width: 6.6%;
+  }
+  .the-message {
+    width: 95.4%;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .got > .msg-text > p {
+    max-width: 420px;
+  }
+  .sent > .msg-text > p {
+    max-width: 420px;
+  }
+
+  .contact-img {
+    max-width: 45px;
+    max-height: 45px;
+  }
+  .con-name-msg > h3 {
+    font-size: 16px;
+  }
+  .con-name-msg > p {
+    font-size: 13px;
+  }
+  .contacts {
+    width: 35vw;
+  }
+  .messages {
+    width: 65vw;
+  }
+  .send-button {
+    width: 8.6%;
+  }
+  .the-message {
+    width: 91.4%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .got > .msg-text > p {
+    max-width: 345px;
+  }
+  .sent > .msg-text > p {
+    max-width: 345px;
+  }
+
+  .contact-img {
+    max-width: 45px;
+    max-height: 45px;
+  }
+  .con-name-msg > h3 {
+    font-size: 16px;
+  }
+  .con-name-msg > p {
+    font-size: 13px;
+  }
+
+  .contacts {
+    width: 35vw;
+  }
+  .messages {
+    width: 65vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .got > .msg-text > p {
+    max-width: 250px;
+  }
+  .sent > .msg-text > p {
+    max-width: 250px;
+  }
+
+  .contact-img {
+    max-width: 40x;
+    max-height: 40px;
+  }
+  .con-name-msg > h3 {
+    font-size: 14px;
+  }
+  .con-name-msg > p {
+    font-size: 11px;
+  }
+
+  .contacts {
+    width: 40vw;
+  }
+  .messages {
+    width: 60vw;
+  }
+  .send-button {
+    width: 11.6%;
+  }
+  .the-message {
+    width: 88.4%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .got > .msg-text > p {
+    max-width: 200px;
+  }
+  .sent > .msg-text > p {
+    max-width: 200px;
+  }
+  .send-button {
+    width: 15.6%;
+  }
+  .the-message {
+    width: 84.4%;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .contacts {
+    width: 45vw;
+  }
+  .messages {
+    width: 55vw;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .got > .msg-text > p {
+    max-width: 150px;
+  }
+  .sent > .msg-text > p {
+    max-width: 150px;
+  }
+}
+.send-button {
+  border-top: 1px solid #00000061;
+  border-right: 1px solid #00000061;
+}
+@media only screen and (max-width: 450px) {
+  .got > .msg-text > p {
+    max-width: 130px;
+  }
+  .sent > .msg-text > p {
+    max-width: 130px;
+  }
+  .contact-img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .got > .msg-text > p {
+    max-width: 110px;
+  }
+  .sent > .msg-text > p {
+    max-width: 110px;
+  }
+  .contact-img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
+.send-button {
+  border-top: 1px solid #00000061;
+  border-right: 1px solid #00000061;
+}
+
+
+#act-now {
+  background: #008eff12  !important;
+}
